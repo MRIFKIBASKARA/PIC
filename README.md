@@ -1,7 +1,6 @@
 ### **Penjelasan PIC18F4520**  
 PIC18F4520 adalah salah satu mikrokontroler 8-bit dari keluarga PIC18 buatan Microchip Technology. Mikrokontroler ini cukup populer karena memiliki performa tinggi, konsumsi daya rendah, dan fitur yang lebih lengkap dibandingkan seri PIC sebelumnya seperti PIC16.
 
-
 ![PIC18F4520](https://github.com/user-attachments/assets/d80fa440-8d4d-4dea-a701-616b46f67765)
 
 ---
@@ -67,6 +66,25 @@ Mikrokontroler ini sering digunakan dalam:
 ✅ **Internet of Things (IoT)** (Bisa dihubungkan dengan modul Wi-Fi eksternal)  
 ✅ **Sistem Monitoring Sensor** (Pembacaan data suhu, tekanan, kelembaban, dll.)  
 
+### **Contoh Penggunaan dalam Sistem Monitoring Suhu**
+Salah satu contoh penggunaan PIC18F4520 adalah dalam sistem monitoring suhu ruangan menggunakan sensor suhu seperti **LM35**.
+
+![alur control unit PIC to LM35](https://github.com/user-attachments/assets/abdcabc9-0a50-4800-a88c-b016da6dcb6b)
+
+
+---
+**Langkah-langkah Implementasi:**
+1. **Sensor LM35** dihubungkan ke salah satu **input ADC** pada PIC18F4520.
+2. Mikrokontroler membaca tegangan keluaran dari sensor (0°C = 0V, 100°C = 1V).
+3. Data suhu dikonversi menggunakan **ADC 10-bit** dan dikalkulasi dalam program.
+4. Nilai suhu ditampilkan melalui **LCD 16x2** atau dikirim ke komputer melalui **USART serial**.
+5. Jika suhu melebihi batas tertentu, sistem bisa mengaktifkan **buzzer** atau **fan pendingin** menggunakan **PWM**.
+
+**Keuntungan Sistem Ini:**
+✔ Monitoring suhu secara real-time.
+✔ Bisa dihubungkan ke jaringan IoT untuk pemantauan jarak jauh.
+✔ Dapat diintegrasikan dengan sistem pendingin otomatis.
+
 ---
 ## **6. Alternatif PIC18F4520**  
 Jika mencari opsi lain yang serupa atau lebih canggih:  
@@ -78,4 +96,6 @@ Jika mencari opsi lain yang serupa atau lebih canggih:
 ---
 ## **Kesimpulan**  
 **PIC18F4520** adalah mikrokontroler **8-bit yang cukup bertenaga**, ideal untuk proyek yang memerlukan pemrosesan sederhana hingga menengah. Dengan **memori besar, komunikasi lengkap, dan fitur ADC**, mikrokontroler ini cocok untuk berbagai aplikasi embedded dan kontrol otomatisasi. Namun, untuk tugas yang lebih kompleks, mungkin lebih baik memilih mikrokontroler **32-bit** seperti **PIC32 atau STM32**.
+
+
 
