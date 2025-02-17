@@ -1,6 +1,7 @@
 ### **Penjelasan PIC18F4520**  
 PIC18F4520 adalah salah satu mikrokontroler 8-bit dari keluarga PIC18 buatan Microchip Technology. Mikrokontroler ini cukup populer karena memiliki performa tinggi, konsumsi daya rendah, dan fitur yang lebih lengkap dibandingkan seri PIC sebelumnya seperti PIC16.
 
+
 ![PIC18F4520](https://github.com/user-attachments/assets/d80fa440-8d4d-4dea-a701-616b46f67765)
 
 ---
@@ -33,7 +34,18 @@ PIC18F4520 adalah salah satu mikrokontroler 8-bit dari keluarga PIC18 buatan Mic
 - **PWM (Pulse Width Modulation)** → Cocok untuk mengontrol motor DC atau lampu LED dengan intensitas variabel.  
 
 ---
-## **3. Kelebihan dan Kekurangan**  
+## **3. Control Unit pada PIC18F4520**  
+Unit kontrol pada PIC18F4520 bertanggung jawab untuk mengatur eksekusi instruksi, pengelolaan interrupt, dan komunikasi antar modul internal. Berikut adalah beberapa komponen utama dalam unit kontrol:
+- **Instruction Decoder** → Menafsirkan instruksi dari memori program dan mengubahnya menjadi sinyal kontrol untuk berbagai bagian dalam mikrokontroler.
+- **Program Counter (PC)** → Menunjukkan alamat instruksi berikutnya yang akan dieksekusi dalam memori program.
+- **Arithmetic Logic Unit (ALU)** → Menangani operasi aritmatika dan logika yang diperlukan oleh instruksi.
+- **Status Register** → Menyimpan informasi tentang hasil operasi ALU, termasuk bit pembawa (carry), overflow, nol, dan negatif.
+- **Interrupt Controller** → Mengelola berbagai sumber interrupt dan menangani prioritas eksekusi.
+- **Watchdog Timer** → Mencegah sistem mengalami crash atau hang dengan melakukan reset otomatis jika terjadi malfungsi.
+- **Stack Pointer** → Menyimpan alamat untuk mengelola pemanggilan dan pengembalian subrutin.
+
+---
+## **4. Kelebihan dan Kekurangan**  
 ### **✅ Kelebihan:**  
 ✔ Performa tinggi untuk mikrokontroler 8-bit  
 ✔ Memiliki memori besar dibandingkan seri PIC16  
@@ -47,7 +59,7 @@ PIC18F4520 adalah salah satu mikrokontroler 8-bit dari keluarga PIC18 buatan Mic
 ✖ Tidak secepat mikrokontroler ARM Cortex-M seperti STM32  
 
 ---
-## **4. Aplikasi PIC18F4520**  
+## **5. Aplikasi PIC18F4520**  
 Mikrokontroler ini sering digunakan dalam:  
 ✅ **Sistem Embedded** (Proyek Arduino alternatif)  
 ✅ **Sistem Kontrol Otomatisasi** (PLC mini, sistem monitoring)  
@@ -56,7 +68,7 @@ Mikrokontroler ini sering digunakan dalam:
 ✅ **Sistem Monitoring Sensor** (Pembacaan data suhu, tekanan, kelembaban, dll.)  
 
 ---
-## **5. Alternatif PIC18F4520**  
+## **6. Alternatif PIC18F4520**  
 Jika mencari opsi lain yang serupa atau lebih canggih:  
 - **PIC16F877A** → Alternatif yang lebih murah tetapi dengan fitur lebih sedikit  
 - **PIC18F4550** → Memiliki fitur tambahan seperti USB  
