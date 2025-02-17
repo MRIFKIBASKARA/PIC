@@ -1,9 +1,7 @@
-
-![PIC18F4520](https://github.com/user-attachments/assets/d80fa440-8d4d-4dea-a701-616b46f67765)
-
-
 ### **Penjelasan PIC18F4520**  
 PIC18F4520 adalah salah satu mikrokontroler 8-bit dari keluarga PIC18 buatan Microchip Technology. Mikrokontroler ini cukup populer karena memiliki performa tinggi, konsumsi daya rendah, dan fitur yang lebih lengkap dibandingkan seri PIC sebelumnya seperti PIC16.
+
+![PIC18F4520](https://github.com/user-attachments/assets/d80fa440-8d4d-4dea-a701-616b46f67765)
 
 ---
 ## **1. Spesifikasi Utama PIC18F4520**  
